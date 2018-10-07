@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Train Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1> Train Time Train Time<br/><small class="current-time"></small></h1>
+
+        </div>
+ 
+
+    <div>
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Train Schedule
+                        </h3>
+                    </div>
+                    <div class="panel-body table-responsive">
+                        <table class="table">
+                            <thead>
+                                <th class="text-center">Train</th>
+                                <th class="text-center">Destination</th>
+                                <th class="text-center">Frequency (min)</th>
+                                <th class="text-center">Next Arrival</th>
+                                <th class="text-center">Minutes Away</th>
+                            </thead>
+
+                            <tbody class="text-center">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Let's Add a Train!
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+
+                            <div class="form-group">
+                                <label for="trainName">Train Name</label>
+                                <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destination" placeholder="Destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstTrainTime">First Train Time (HH:mm Military Time)</label>
+                                <input type="text" class="form-control" id="firstTrainTime" placeholder="First Train Time">
+                            </div>
+                            <div class="form-group hidden">
+                                <label for="trainKey">Train Key</label>
+                                <input type="text" class="form-control" id="trainKey" placeholder="Disable Input">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequency">Frequency</label>
+                                <input type="text" class="form-control" id="frequency" placeholder="Train Frequency">
+                            </div>
+                            <button type="submit" class="btn submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Firebase Reference -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <!-- My JS -->
+    <script src="assets/javascript/app.js"></script>
+    <!-- Moment js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+
+</html>

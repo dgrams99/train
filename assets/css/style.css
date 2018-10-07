@@ -1,0 +1,32 @@
+body {
+    padding-top: 50px;
+    background-color: darkgoldenrod;
+}
+
+/*
+.row {
+    margin: 0;
+}
+*/
+
+.col-sm-12, .col-md-9 {
+    margin: 0;
+    width: 100%;
+}
+
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.panel {
+   
+    border: 1px solid gray;
+    
+}
+
+
